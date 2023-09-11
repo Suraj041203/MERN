@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            border-radius: 50%;
+            height: 180px;
+            left: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .loginbar {
+            background-color: rgb(56, 176, 56);
+            border: 0;
+            color: white;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .loginbox {
+            height: 440px;
+            width: 420px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pass {
+            display: flex;
+            flex-direction: row;
+            background-color: #e1dede;
+            padding: 5px 5px 5px 5px;
+            justify-content: space-between;
+            width: 100%;
+
+
+        }
+
+        .red {
+            background-color: rgb(212, 24, 24);
+            color: white;
+            border: 0;
+            border-radius: 5px;
+            height: 30px;
+        }
+
+        .bar {
+            width: 100%;
+            height: 25px;
+        }
+
+        .section {
+            padding: 10px 10px 5px 10px;
+        }
+        .sec{
+            padding: 10px 10px 15px 10px ;
+        }
+
+        .pass {
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .ib {
+            display: inline-block;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 3px 5px 3px;
+        }
+        .loginboxx{
+            padding-left: 10px solid white;
+            background-color: #e9e9e9;
+          border-top: 1px solid rgb(195, 194, 194);
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="loginbox">
+        <div align="center">
+            <img src="avatar.png" alt="avatar">
+        </div>
+        <form action="#">
+            <div class="section">
+                <label for="un"><b>Username</b></label><br>
+                <input type="text" id="un" placeholder="Enter Username" class="bar"><br>
+            </div>
+            <div class="section"><label for="pass"><b>Password</b></label> <br>
+                <input type="password" id="pass" placeholder="Enter Password" class="bar"><br>
+            </div>
+            <div class="section"><input type="submit" name="submit" value="Login" class="loginbar"><br></div>
+            <div class="sec"><input type="checkbox" name="rememberMe" id="rememberMe">
+            <label for="rememberMe">Remember me</label></div>
+        </form>
+        <div class="loginboxx">
+            <div class="action-buttons">
+                <button class="red">Cancel</button>
+                <a href="#">Forgot <u>password?</u></a>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
